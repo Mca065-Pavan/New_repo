@@ -1,0 +1,28 @@
+class PlantDemo {
+    void produceOxygen() {
+        System.out.println("Plant: Producing oxygen through photosynthesis.");
+    }
+}
+
+class Flower extends Plant {
+    void developBuds() {
+        System.out.println("Flower: Developing flower buds.");
+    }
+}
+
+class Rose extends Flower {
+    void growThorns() {
+        System.out.println("Rose: Growing protective thorns.");
+    }
+}
+
+class PlantDemo {
+    public static void main(String args[]) {
+        Rose myRose = new Rose();
+
+        System.out.println("--- Rose Hierarchy Demonstration ---");
+        myRose.produceOxygen(); 
+        myRose.developBuds();   
+        myRose.growThorns();    
+    }
+}
